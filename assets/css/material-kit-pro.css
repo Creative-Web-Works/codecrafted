@@ -528,7 +528,7 @@ iframe {
   display: block;
   width: 100%;
   height: 500px;
-  border: 1px solid #666;
+  border: 1px solid #fff;
   box-sizing: border-box;
   transform-origin: center top;
   transition: transform .05s linear;
@@ -23036,7 +23036,7 @@ html {
 }
 
 *.gradient-animation {
-  background: linear-gradient(-45deg, #49a3f1, #F44335, #2ffdd3,  #652ff9, #344767);
+  background: linear-gradient(-45deg,  #d63384, #f7f71e, #63B3ED, #fd7e14 );
   background-size: 400% 400% !important;
   -webkit-animation: gradient 10s ease infinite;
           animation: gradient 10s ease infinite;
