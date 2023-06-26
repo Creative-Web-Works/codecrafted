@@ -20312,39 +20312,8 @@ fieldset:disabled .btn {
   }
 }
 
-/*!
 
-=========================================================
-* Material Kit PRO - v3.0.3
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*!
-
-=========================================================
-* Material Kit PRO - v3.0.3
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (site.license)
-
-* Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 .alert-primary {
   background-image: linear-gradient(195deg, #fd772f  0%, #652ff9 100%);
 }
@@ -38084,7 +38053,7 @@ text,
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 150vh;
 }
 
 @keyframes gradient {
