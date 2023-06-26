@@ -70,7 +70,7 @@
   --bs-border-radius-xl: 0.75rem;
   --bs-border-radius-2xl: 1rem;
   --bs-border-radius-pill: 50rem;
-  --bs-heading-color: #652ff9;
+  --bs-heading-color: #04010c;
   --bs-link-color: #f9ca2f;
   --bs-link-hover-color: #61fa15;
   --bs-code-color: #d63384;
@@ -3662,7 +3662,7 @@ textarea.form-control.is-invalid {
 .btn {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.625rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family: 3rem ;
   --bs-btn-font-size: 0.75rem;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.667;
@@ -38080,7 +38080,7 @@ text,
 /*Colour Changing Gradient Background*/
 
 #gradclr, #gradclr1, body {
-  background: linear-gradient(-45deg, #ee7752, #652ff9, #f7f71e, #2ffdd3);
+  background: linear-gradient(-45deg, #d63384, #f7f71e, #63B3ED, #fd7e14 );
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
