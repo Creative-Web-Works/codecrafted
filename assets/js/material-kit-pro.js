@@ -1,18 +1,17 @@
 /*!
 
+<!--
 =========================================================
-* Material Kit 2 PRO - v3.0.3
-=========================================================
-
-* Product Page: ./index.htmlproduct/soft-ui-design-system
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
+*Creative Web Works Studio Ltd
 =========================================================
 
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* Main Page:  ./index.html 
+* Copyright 2023 Creative Web Works Studio Ltd (https://codecrafted.co.uk/)
+* Coded by https://codecrafted.co.uk/
 
+ =========================================================
+
+ -->
 */
 
 // Returns a function, that, as long as it continues to be invoked, will not
@@ -21,26 +20,50 @@
 // leading edge, instead of the trailing.
 
 
-
 function debounce(func, wait, immediate) {
-  var timeout;
-  return function() {
-    var context = this,
-      args = arguments;
+  return function () {
     clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    }, wait);
-    if (immediate && !timeout) func.apply(context, args);
+    timeout = setTimeout(func, wait);
+    if (immediate && !timeout) {
+      func();
+    }
   };
-};
+}
+
+  function debounced() {
+    var context = this;
+    var args = arguments;
+
+    var executeFunction = function() {
+      if (!immediate) {
+        func.apply(context, args);
+      }
+      timeout = null;
+    };
+
+    var shouldCallNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(executeFunction, wait);
+
+    if (shouldCallNow) {
+      func.apply(context, args);
+    }
+  }
+
+  return debounced;
+}
 
 // Function for smooth scroll to element
 
 // Debounce function
 function debounce(func, wait, immediate) {
-  var timeout;
+  var timeout = null;
+  return function() {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, wait);
+  };
+}
+
   return function() {
     var context = this,
       args = arguments;
@@ -51,7 +74,8 @@ function debounce(func, wait, immediate) {
     }, wait);
     if (immediate && !timeout) func.apply(context, args);
   };
-};
+}
+
 
 // initialization of Popovers
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -83,29 +107,34 @@ var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
 
 
 window.onload = function() {
-  // Material Design Input function
   var inputs = document.querySelectorAll('input');
 
-  for (var i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('focus', function() {
-      this.parentElement.classList.add('is-focused');
-    }, false);
-
-    inputs[i].onkeyup = function() {
-      if (this.value != "") {
-        this.parentElement.classList.add('is-filled');
-      } else {
-        this.parentElement.classList.remove('is-filled');
-      }
-    };
-
-    inputs[i].addEventListener('focusout', function() {
-      if (this.value != "") {
-        this.parentElement.classList.add('is-filled');
-      }
-      this.parentElement.classList.remove('is-focused');
-    }, false);
+  function handleInput(event) {
+    var input = event.target;
+    var parentElement = input.parentElement;
+    parentElement.classList.toggle('is-filled', input.value !== "");
   }
+
+  function handleBlur(event) {
+    var input = event.target;
+    var parentElement = input.parentElement;
+    parentElement.classList.remove('is-focused');
+    parentElement.classList.toggle('is-filled', input.value !== "");
+  }
+
+  function handleFocus(event) {
+    var input = event.target;
+    input.parentElement.classList.add('is-focused');
+  }
+
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('input', handleInput);
+    inputs[i].addEventListener('blur', handleBlur);
+    inputs[i].addEventListener('focus', handleFocus);
+  }
+};
+
+
 
   // Ripple Effect
   var ripples = document.querySelectorAll('.btn');
@@ -214,176 +243,95 @@ if (document.querySelector('.blur-shadow-avatar')) {
 }
 
 //Google Maps
-if (document.querySelector('#google-maps')) {
-  var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
-  var mapOptions = {
-    zoom: 13,
-    center: myLatlng,
-    scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
-    styles: [{
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#444444"
-        }]
-      },
-      {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [{
-          "color": "#f2f2f2"
-        }]
-      },
-      {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [{
-          "visibility": "off"
-        }]
-      },
-      {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [{
-          "saturation": -100
-        }, {
-          "lightness": 45
-        }]
-      },
-      {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [{
-          "visibility": "simplified"
-        }]
-      },
-      {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [{
-          "visibility": "off"
-        }]
-      },
-      {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [{
-          "visibility": "off"
-        }]
-      },
-      {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [{
-          "color": "#C5CBF5"
-        }, {
-          "visibility": "on"
-        }]
-      }
-    ]
-  };
 
-  var map = new google.maps.Map(document.getElementById("google-maps"), mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myLatlng,
-    title: "Hello World!"
-  });
-
-  // To add the marker to the map, call setMap();
-  marker.setMap(map);
-}
 
 // Tabs navigation
 
+
 var total = document.querySelectorAll('.nav-pills');
 
-total.forEach(function(item) {
+total.forEach(function (item) {
   var moving_div = document.createElement('div');
   var first_li = item.querySelector('li:first-child .nav-link');
-  var tab = first_li.cloneNode();
+  var tab = document.createElement('a');
   tab.innerHTML = "-";
 
-  moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
+  moving_div.classList.add('moving-tab', 'position-absolute');
   moving_div.appendChild(tab);
   item.appendChild(moving_div);
 
-
   moving_div.style.padding = '0px';
-  moving_div.style.width = item.querySelector('li:nth-child(1)').offsetWidth + 'px';
+  moving_div.style.width = first_li.offsetWidth + 'px';
   moving_div.style.transform = 'translate3d(0px, 0px, 0px)';
   moving_div.style.transition = '.5s ease';
 
-  item.onmouseover = function(event) {
-    let target = getEventTarget(event);
-    let li = target.closest('li'); // get reference
+  item.addEventListener('mouseover', function (event) {
+    var target = event.target;
+    var li = target.closest('li');
     if (li) {
-      let nodes = Array.from(li.closest('ul').children); // get array
-      let index = nodes.indexOf(li) + 1;
-      item.querySelector('li:nth-child(' + index + ') .nav-link').onclick = function() {
-        moving_div = item.querySelector('.moving-tab');
-        let sum = 0;
-        if (item.classList.contains('flex-column')) {
-          for (var j = 1; j <= nodes.indexOf(li); j++) {
-            sum += item.querySelector('li:nth-child(' + j + ')').offsetHeight;
-          }
-          moving_div.style.transform = 'translate3d(0px,' + sum + 'px, 0px)';
-          moving_div.style.height = item.querySelector('li:nth-child(' + j + ')').offsetHeight;
-        } else {
-          for (var j = 1; j <= nodes.indexOf(li); j++) {
-            sum += item.querySelector('li:nth-child(' + j + ')').offsetWidth;
-          }
-          moving_div.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)';
-          moving_div.style.width = item.querySelector('li:nth-child(' + index + ')').offsetWidth + 'px';
-        }
+      var nodes = Array.from(item.children);
+      var index = nodes.indexOf(li) + 1;
+
+      var sum = 0;
+      for (var j = 0; j < index - 1; j++) {
+        sum += nodes[j].offsetWidth;
       }
-    }
-  }
-});
 
-
-// Tabs navigation resize
-
-window.addEventListener('resize', function() {
-  total.forEach(function(item) {
-    item.querySelector('.moving-tab').remove();
-    var moving_div = document.createElement('div');
-    var tab = item.querySelector(".nav-link.active").cloneNode();
-    tab.innerHTML = "-";
-
-    moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
-    moving_div.appendChild(tab);
-
-    item.appendChild(moving_div);
-
-    moving_div.style.padding = '0px';
-    moving_div.style.transition = '.5s ease';
-
-    let li = item.querySelector(".nav-link.active").parentElement;
-
-    if (li) {
-      let nodes = Array.from(li.closest('ul').children); // get array
-      let index = nodes.indexOf(li) + 1;
-
-      let sum = 0;
       if (item.classList.contains('flex-column')) {
-        for (var j = 1; j <= nodes.indexOf(li); j++) {
-          sum += item.querySelector('li:nth-child(' + j + ')').offsetHeight;
-        }
         moving_div.style.transform = 'translate3d(0px,' + sum + 'px, 0px)';
-        moving_div.style.width = item.querySelector('li:nth-child(' + index + ')').offsetWidth + 'px';
-        moving_div.style.height = item.querySelector('li:nth-child(' + j + ')').offsetHeight;
+        moving_div.style.height = li.offsetHeight + 'px';
       } else {
-        for (var j = 1; j <= nodes.indexOf(li); j++) {
-          sum += item.querySelector('li:nth-child(' + j + ')').offsetWidth;
-        }
         moving_div.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)';
-        moving_div.style.width = item.querySelector('li:nth-child(' + index + ')').offsetWidth + 'px';
-
+        moving_div.style.width = li.offsetWidth + 'px';
       }
     }
   });
+});
 
+ 
+
+// Tabs navigation resize
+window.addEventListener('resize', function() 
+  total.forEach(function(item) {
+    var moving_div = item.querySelector('.moving-tab');
+    moving_div.remove();
+    
+    var tab = item.querySelector(".nav-link.active").cloneNode(true);
+    tab.innerHTML = "-";
+    
+    var moving_div = document.createElement('div');
+    moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
+    moving_div.appendChild(tab);
+    
+    item.appendChild(moving_div);
+    
+    moving_div.style.padding = '0px';
+    moving_div.style.transition = '.5s ease';
+    
+    var li = item.querySelector(".nav-link.active").parentElement;
+    
+    if (li) {
+      var nodes = Array.from(item.querySelectorAll('li'));
+      var index = nodes.indexOf(li) + 1;
+      
+      var sum = 0;
+      if (item.classList.contains('flex-column')) {
+        for (var j = 1; j <= nodes.indexOf(li); j++) {
+          sum += nodes[j - 1].offsetHeight;
+        }
+        moving_div.style.transform = 'translate3d(0px,' + sum + 'px, 0px)';
+        moving_div.style.width = nodes[index - 1].offsetWidth + 'px';
+        moving_div.style.height = nodes[index - 1].offsetHeight + 'px';
+      } else {
+        for (var j = 1; j <= nodes.indexOf(li); j++) {
+          sum += nodes[j - 1].offsetWidth;
+        }
+        moving_div.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)';
+        moving_div.style.width = nodes[index - 1].offsetWidth + 'px';
+      }
+    }
+  });
+  
   if (window.innerWidth < 991) {
     total.forEach(function(item) {
       if (!item.classList.contains('flex-column')) {
@@ -400,10 +348,13 @@ window.addEventListener('resize', function() {
 });
 
 
+
+
 function getEventTarget(e) {
   e = e || window.event;
   return e.target || e.srcElement;
 }
+
 
 // End tabs navigation
 
@@ -417,32 +368,29 @@ function getEventTarget(e) {
  * twitter.com/Herschel_R
  */
 (function (win, doc) {
-
-  /** Below this point the scaling takes effect. */
   var BREAKPOINT = 1030;
-  
-  /**
-   * The `window.resize`-callback gets throttled
-   * to an interval of 30ms.
-  */
   var THROTTLE = 30;
-  
-  /** Just the declaration. Definition comes later. */
-  var IFRAME_HEIGHT;
+  var iframe = doc.querySelector('iframe');
+  var iframeHeight = iframe.clientHeight;
+  var timestamp = 0;
 
-  var iframe = doc.getElementsByTagName('iframe')[0],
-      timestamp = 0;
-  
-  /** Defining the inital iframe-height. */
-  IFRAME_HEIGHT = parseInt(getComputedStyle(iframe).height, 10);
-  
-  /**
-   * Takes an object with CSS-transform-properties
-   * and generates a cross-browser-ready style string.
-   *
-   * @param  {Object} obj
-   * @return {String}
-   */
+  function handleResize() {
+    var now = Date.now();
+
+    if (now - timestamp >= THROTTLE) {
+      timestamp = now;
+
+      var scaleFactor = Math.min(win.innerWidth / BREAKPOINT, 1);
+
+      iframe.style.transform = 'scale(' + scaleFactor + ')';
+      iframe.style.height = iframeHeight * scaleFactor + 'px';
+    }
+  }
+
+  win.addEventListener('resize', handleResize);
+  handleResize();
+})(window, document);
+
   function transformStr(obj) {
     var obj = obj || {},
         val = '',
@@ -463,61 +411,25 @@ function getEventTarget(e) {
    * @return {Function}
    */
   function onResize() {
+    var now = +new Date(),
+      winWidth = window.innerWidth;
   
-    var now = +new Date,
-        winWidth = win.innerWidth,
-        noResizing = winWidth > BREAKPOINT,
-        scale,
-        width,
-        height,
-        offsetLeft;
-    
-    if ( now - timestamp < THROTTLE || noResizing ) {
-      /** Remove the style-attr if we're out of the "scaling-zone". */
-      noResizing && iframe.hasAttribute('style') && iframe.removeAttribute('style');
+    if (now - timestamp < THROTTLE || winWidth > BREAKPOINT) {
+      iframe.removeAttribute('style');
       return onResize;
     }
-    
-    timestamp = now;
-    
-    /**
-     * The required scaling; using `Math.pow` to get
-     * a safely small enough value.
-     */
-    scale = Math.pow(winWidth / BREAKPOINT, 1.2);
-    
-    /**
-     * To get the corresponding width that compensates
-     * the shrinking and thus keeps the width of the
-     * iframe consistent, we have to divide 100 by the
-     * scale. This gives us the correct value in percent.
-     */
-    width = 100 / scale;
-    
-    /**
-     * We're using the initial height and the compen-
-     * sating width to compute the compensating height
-     * in px.
-     */
-    height = IFRAME_HEIGHT / scale;
-    
-    /**
-     * We have to correct the position of the iframe,
-     * when changing its width.
-     */
-    offsetLeft = (width - 100) / 2;
-    
-    /** Setting the styles. */
-    iframe.setAttribute('style', transformStr({
-      scale: scale,
-      translateX: '-' + offsetLeft + '%'
-    }) + '; width: ' + width + '%; ' + 'height: ' + height + 'px');
-    
-    return onResize;
   
+    timestamp = now;
+  
+    var scale = Math.pow(winWidth / BREAKPOINT, 1.2),
+      width = 100 / scale,
+      height = IFRAME_HEIGHT / scale,
+      offsetLeft = (width - 100) / 2;
+  
+    iframe.setAttribute('style', `transform: scale(${scale}); translateX(-${offsetLeft}%); width: ${width}%; height: ${height}px`);
+  
+    return onResize;
   }
   
-  /** Listening to `window.resize`. */
-  win.addEventListener('resize', onResize(), false);
-
-})(window.self, document);
+  window.addEventListener('resize', onResize, false);
+  
