@@ -522,6 +522,15 @@ function updateFlexColumnClass(item) {
   }
 }
 
+
+
+
+
+
+
+
+
+
 // Resize event listener
 // Function to handle tab navigation resize
 function handleTabNavigationResize() {
