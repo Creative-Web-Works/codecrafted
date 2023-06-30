@@ -29,10 +29,12 @@
   "dependencies": {
     "@snyk/glob-parent": "^5.1.2-patch.1",
     "glob-parent": "^6.0.2",
+    "gulp-bump": "^3.2.0",
     "lst": "^0.1.0",
     "parcel": "^2.9.3",
     "semver": "^7.5.3",
     "snyk": "^1.1187.0",
+    "trim-newlines": "^5.0.0",
     "update-versions": "^6.0.15"
   },
   "devDependencies": {
