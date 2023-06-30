@@ -1,10 +1,13 @@
+
 {
   "name": "codecrafted",
   "version": "1.0.0",
   "description": "Web design and development services.",
   "main": "G-VB7QBQX49D",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -30,22 +33,10 @@
     "gulp": "^4.0.2",
     "lst": "^0.1.0",
     "semver": "^7.5.3",
-    "snyk": "^1.1187.0"
-  },
-  "devDependencies": {
+    "snyk": "^1.1187.0",
     "parcel": "^2.9.3"
-  }
-}
-
-{
-  "name": "codecrafted",
-  "source": "src/index.html",
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "2.9.3"
   }
 }
-

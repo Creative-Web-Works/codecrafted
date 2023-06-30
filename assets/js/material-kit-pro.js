@@ -95,7 +95,7 @@ window.onload = function() {
       }, 600);
     }, false);
   }
-};
+
 
 // Multi Level Dropdown
 function dropDown(a) {
