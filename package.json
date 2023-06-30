@@ -34,6 +34,7 @@
     "gulp-bump": "^3.2.0",
     "lst": "^0.1.0",
     "meow": "^12.0.1",
+    "normalize-package-data": "^5.0.0",
     "package-json-manager": "^1.1.6",
     "parcel": "^2.9.3",
     "read-pkg-up": "^9.1.0",
