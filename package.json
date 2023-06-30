@@ -33,6 +33,7 @@
     "lst": "^0.1.0",
     "parcel": "^2.9.3",
     "semver": "^7.5.3",
+    "semver-stable": "^3.0.0",
     "snyk": "^1.1187.0",
     "trim-newlines": "^5.0.0",
     "update-versions": "^6.0.15"
