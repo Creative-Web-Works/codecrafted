@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Creative-Web-Works/codecrafted#readme",
   "dependencies": {
+    "@ngrx/store": "^16.0.1",
     "@snyk/glob-parent": "^5.1.2-patch.1",
     "glob-parent": "^6.0.2",
     "gulp-bump": "^3.2.0",
