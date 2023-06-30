@@ -560,9 +560,10 @@
        </div>
        <div class="col-12">
          <div class="text-center text-warning">
-           All rights reserved codecrafted.co.uk / Creative Web Works Studio Ltd Copyright ©  <script>
-             document.write(new Date().getFullYear())
-           </script>
+           All rights reserved codecrafted.co.uk / Creative Web Works Studio Ltd &copy; <span id="current-year"></span>
+              <script>
+               document.getElementById('current-year').textContent = new Date().getFullYear();
+              </script>
          </div>
        </div>
      </div>

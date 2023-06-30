@@ -533,34 +533,197 @@ function updateFlexColumnClass(item) {
 
 // Resize event listener
 // Function to handle tab navigation resize
+
 function handleTabNavigationResize() {
-  total.forEach(function(item, i) {
-    var movingTab = item.querySelector('.moving-tab');
-    movingTab.remove();
-    
+  total.forEach(function(item) {
     var moving_div = createMovingDiv(item);
-    item.appendChild(moving_div);
-    
-    let li = item.querySelector(".nav-link.active").parentElement;
+    var li = item.querySelector(".nav-link.active").parentElement;
+
     if (li) {
-      let dimensionProperty = item.classList.contains('flex-column') ? 'offsetHeight' : 'offsetWidth';
-      let sum = calculateDimensionSum(item, li, dimensionProperty);
-      
-      if (item.classList.contains('flex-column')) {
-        moving_div.style.transform = 'translate3d(0px,' + sum + 'px, 0px)';
-        moving_div.style.width = item.querySelector('li:nth-child(' + index + ')').offsetWidth + 'px';
-        moving_div.style.height = item.querySelector('li:nth-child(' + j + ')').offsetHeight + 'px';
-      } else {
-        moving_div.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)';
-        moving_div.style.width = item.querySelector('li:nth-child(' + index + ')').offsetWidth + 'px';
-      }
+      var dimensionProperty = item.classList.contains('flex-column') ? 'offsetHeight' : 'offsetWidth';
+      var sum = calculateDimensionSum(item, li, dimensionProperty);
+
+      moving_div.style.transform = `translate3d(${sum}px, ${item.classList.contains('flex-column') ? sum : 0}px, 0px)`;
+      moving_div.style.width = li.offsetWidth + 'px';
+      moving_div.style.height = li.offsetHeight + 'px';
     }
-  });
-  
-  total.forEach(function(item, i) {
+
     updateFlexColumnClass(item);
+    updateMovingTabs(item, moving_div);
   });
 }
+
+function createMovingDiv(item) {
+  var moving_div = item.querySelector('.moving-tab');
+  if (moving_div) {
+    moving_div.remove();
+  }
+
+  moving_div = document.createElement('div');
+  var tab = item.querySelector(".nav-link.active").cloneNode();
+  tab.textContent = "-";
+
+  moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
+  moving_div.appendChild(tab);
+  moving_div.style.padding = '0px';
+  moving_div.style.transition = '.5s ease';
+
+  return moving_div;
+}
+
+function calculateDimensionSum(item, li, dimensionProperty) {
+  var nodes = Array.from(li.closest('ul').children);
+  var sum = nodes.slice(0, nodes.indexOf(li)).reduce(function (total, node) {
+    return total + node[dimensionProperty];
+  }, 0);
+
+  return sum;
+}
+
+function updateFlexColumnClass(item) {
+  var isFlexColumn = window.innerWidth < 991;
+  item.classList.toggle('flex-column', isFlexColumn);
+  item.classList.toggle('on-resize', isFlexColumn);
+}
+
+function updateMovingTabs(item, moving_div) {
+  item.querySelectorAll('.moving-tab').forEach(function(movingTab) {
+    movingTab.remove();
+  });
+
+  item.appendChild(moving_div);
+}
+
+window.addEventListener('resize', handleTabNavigationResize);
+
+
+function createMovingDiv(item) {
+  var moving_div = document.createElement('div');
+  var tab = item.querySelector(".nav-link.active").cloneNode();
+  tab.textContent = "-";
+
+  moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
+  moving_div.appendChild(tab);
+  moving_div.style.padding = '0px';
+  moving_div.style.transition = '.5s ease';
+
+  return moving_div;
+}
+
+function calculateDimensionSum(item, li, dimensionProperty) {
+  var nodes = Array.from(li.closest('ul').children);
+  var sum = nodes.slice(0, nodes.indexOf(li)).reduce(function (total, node) {
+    return total + node[dimensionProperty];
+  }, 0);
+
+  return sum;
+}
+
+function updateFlexColumnClass(item, isFlexColumn) {
+  item.classList.toggle('flex-column', isFlexColumn);
+  item.classList.toggle('on-resize', isFlexColumn);
+}
+
+window.addEventListener('resize', handleTabNavigationResize);
+
+
+function createMovingDiv(item) {
+  var moving_div = document.createElement('div');
+  var tab = item.querySelector(".nav-link.active").cloneNode();
+  tab.textContent = "-";
+
+  moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
+  moving_div.appendChild(tab);
+  moving_div.style.padding = '0px';
+  moving_div.style.transition = '.5s ease';
+
+  return moving_div;
+}
+
+function calculateDimensionSum(item, li, dimensionProperty) {
+  var nodes = Array.from(li.closest('ul').children);
+  var sum = nodes.slice(0, nodes.indexOf(li)).reduce(function (total, node) {
+    return total + node[dimensionProperty];
+  }, 0);
+
+  return sum;
+}
+
+function updateFlexColumnClass(item) {
+  var isFlexColumn = window.innerWidth < 991;
+  item.classList.toggle('flex-column', isFlexColumn);
+  item.classList.toggle('on-resize', isFlexColumn);
+}
+
+window.addEventListener('resize', handleTabNavigationResize);
+
+
+function createMovingDiv(item) {
+  var moving_div = document.createElement('div');
+  var tab = item.querySelector(".nav-link.active").cloneNode();
+  tab.textContent = "-";
+
+  moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
+  moving_div.appendChild(tab);
+  moving_div.style.padding = '0px';
+  moving_div.style.transition = '.5s ease';
+
+  return moving_div;
+}
+
+function calculateDimensionSum(item, li, dimensionProperty) {
+  var nodes = Array.from(li.closest('ul').children);
+  var sum = nodes.slice(0, nodes.indexOf(li)).reduce(function (total, node) {
+    return total + node[dimensionProperty];
+  }, 0);
+
+  return sum;
+}
+
+function updateFlexColumnClass(item) {
+  var isFlexColumn = window.innerWidth < 991;
+  item.classList.toggle('flex-column', isFlexColumn);
+  item.classList.toggle('on-resize', isFlexColumn);
+}
+
+window.addEventListener('resize', handleTabNavigationResize);
+
+
+function createMovingDiv(item) {
+  var moving_div = document.createElement('div');
+  var tab = item.querySelector(".nav-link.active").cloneNode();
+  tab.textContent = "-";
+
+  moving_div.classList.add('moving-tab', 'position-absolute', 'nav-link');
+  moving_div.appendChild(tab);
+  moving_div.style.padding = '0px';
+  moving_div.style.transition = '.5s ease';
+
+  return moving_div;
+}
+
+function calculateDimensionSum(item, li, dimensionProperty) {
+  var nodes = Array.from(li.closest('ul').children);
+  var sum = 0;
+
+  for (var j = 0; j < nodes.indexOf(li); j++) {
+    sum += item.querySelector(`li:nth-child(${j + 1})`)[dimensionProperty];
+  }
+
+  return sum;
+}
+
+function updateFlexColumnClass(item) {
+  if (window.innerWidth < 991) {
+    item.classList.toggle('flex-column', !item.classList.contains('flex-column'));
+    item.classList.toggle('on-resize', !item.classList.contains('flex-column'));
+  } else {
+    item.classList.remove('flex-column', 'on-resize');
+  }
+}
+
+window.addEventListener('resize', handleTabNavigationResize);
+
 
 // Helper function to create the moving div element
 function createMovingDiv(item) {
