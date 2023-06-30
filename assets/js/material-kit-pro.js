@@ -829,3 +829,6 @@ async function main() {
 
 main();
 
+import { trimNewlines, trimNewlinesStart, trimNewlinesEnd } from 'trim-newlines';
+
+
