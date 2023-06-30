@@ -831,4 +831,12 @@ main();
 
 import { trimNewlines, trimNewlinesStart, trimNewlinesEnd } from 'trim-newlines';
 
+console.log(trimNewlines('\n🦄\n🦄\r\n'));
+//=> '🦄\n🦄'
+
+console.log(trimNewlinesStart('\n🦄\r\n'));
+//=> '🦄\r\n'
+
+console.log(trimNewlinesEnd('\n🦄\r\n'));
+//=> '\n🦄'
 
