@@ -1,4 +1,3 @@
-
 {
   "name": "codecrafted",
   "version": "1.0.0",
@@ -30,13 +29,14 @@
   "dependencies": {
     "@snyk/glob-parent": "^5.1.2-patch.1",
     "glob-parent": "^6.0.2",
-    "gulp": "^4.0.2",
     "lst": "^0.1.0",
+    "parcel": "^2.9.3",
     "semver": "^7.5.3",
     "snyk": "^1.1187.0",
-    "parcel": "^2.9.3"
+    "update-versions": "^6.0.15"
   },
   "devDependencies": {
+    "auto-upgrade-npm-version": "^1.0.7",
     "parcel": "2.9.3"
   }
 }
