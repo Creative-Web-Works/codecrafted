@@ -811,5 +811,5 @@ function copyCode(el) {
     }, 2500);
   }
 }
-
+import stable from 'semver-stable';
 // End copy code function
