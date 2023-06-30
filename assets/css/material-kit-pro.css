@@ -7283,7 +7283,7 @@ fieldset:disabled .btn {
   left: 0;
   z-index: 2;
   display: flex;
-  justify-content:justify
+  justify-content:justify;
   padding: 0;
   margin-right: 15%;
   margin-bottom: 1rem;

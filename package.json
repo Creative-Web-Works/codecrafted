@@ -25,7 +25,27 @@
   },
   "homepage": "https://github.com/Creative-Web-Works/codecrafted#readme",
   "dependencies": {
+    "@snyk/glob-parent": "^5.1.2-patch.1",
+    "glob-parent": "^6.0.2",
     "gulp": "^4.0.2",
-    "lst": "^0.1.0"
+    "lst": "^0.1.0",
+    "semver": "^7.5.3",
+    "snyk": "^1.1187.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
   }
 }
+
+{
+  "name": "codecrafted",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}
+
