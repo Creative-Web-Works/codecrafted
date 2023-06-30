@@ -819,3 +819,13 @@ var bump = require('bump-regex');
 bump('version: "0.1.2"', function(err, out) {
   // => 'version: "0.1.3"'
 });
+
+import { readPackageUp } from 'read-pkg-up';
+
+async function main() {
+  const result = await readPackageUp();
+  console.log(result);
+}
+
+main();
+
