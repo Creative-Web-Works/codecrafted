@@ -1,0 +1,31 @@
+{
+  "name": "codecrafted",
+  "version": "1.0.0",
+  "description": "Web design and development services.",
+  "main": "G-VB7QBQX49D",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creative-Web-Works/codecrafted.git"
+  },
+  "keywords": [
+    "website",
+    "web-design",
+    "e-commerce",
+    "business",
+    "domain",
+    "hosting"
+  ],
+  "author": "Maria Robson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Creative-Web-Works/codecrafted/issues"
+  },
+  "homepage": "https://github.com/Creative-Web-Works/codecrafted#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "lst": "^0.1.0"
+  }
+}
