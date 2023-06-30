@@ -31,14 +31,16 @@
     "glob-parent": "^6.0.2",
     "gulp-bump": "^3.2.0",
     "lst": "^0.1.0",
+    "package-json-manager": "^1.1.6",
     "parcel": "^2.9.3",
     "semver": "^7.5.3",
     "semver-stable": "^3.0.0",
     "snyk": "^1.1187.0",
-    "trim-newlines": "^5.0.0",
+    "trim-newlines": "^3.0.1",
     "update-versions": "^6.0.15"
   },
   "devDependencies": {
+    "@vercel/ncc": "^0.36.1",
     "auto-upgrade-npm-version": "^1.0.7",
     "parcel": "2.9.3"
   }
