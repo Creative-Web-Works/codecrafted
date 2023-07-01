@@ -1,0 +1,4 @@
+# ads.txt file for codecrafted.co.uk: 
+
+google.com, pub-4609781170642264, DIRECT, f08c47fec0942fa0
+
