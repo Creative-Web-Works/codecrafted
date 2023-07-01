@@ -831,18 +831,7 @@ main();
 
 import { trimNewlines, trimNewlinesStart, trimNewlinesEnd } from 'trim-newlines';
 
-console.log(trimNewlines('\n🦄\n🦄\r\n'));
-//=> '🦄\n🦄'
 
-console.log(trimNewlinesStart('\n🦄\r\n'));
-//=> '🦄\r\n'
-
-console.log(trimNewlinesEnd('\n🦄\r\n'));
-
-./foo-app.js unicorns --rainbow
-#!/usr/bin/env node
-import meow from 'meow';
-import foo from './lib/index.js';
 
 const cli = meow(`
 	Usage
