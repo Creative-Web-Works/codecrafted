@@ -9,20 +9,20 @@
 }
 
 .navbar-default {
-	background-color: #1E1E1E;
+	background-color: #2ffdd3;
 	border: none;
-	box-shadow: 0px 1px 1px #A96113;
+	box-shadow: 0px 1px 1px #652ff9;
 }
 
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent;
-	color: #E4840D;
+	color: #652ff9;
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: rgba(238, 238, 238, 0.7);
+	color: rgba(101, 47, 249, 0.7);
 	font-size: 12px;
 	/*text-align: center;*/
 	padding-right: 0px;
@@ -39,11 +39,11 @@
 
 .navbar-default .navbar-nav>li>a:focus, 
 .navbar-default .navbar-nav>li>a:hover {
-	color: #eeeeee;
+	color: #652ff9;
 }
 
 .navbar-default .navbar-nav>li>a:after {
-	background-color: #eeeeee;
+	background-color: #652ff9;
 	display: block;
 	position: absolute;
 	left: 9px;
@@ -66,7 +66,7 @@
 }
 
 .navbar-default .navbar-nav>.active>a:after {
-	background-color: #E4840D;
+	background-color: #652ff9;
 }
 
 /*.navbar-default .navbar-nav>.active>a:hover:after {
@@ -82,7 +82,7 @@
 }
 
 .navbar-default .navbar-brand span:last-child {
-	color: #E4840D;
+	color: #652ff9;
     font-weight: 400;
     padding-left: 4px;
 }
@@ -108,7 +108,7 @@
 
 .navbar-default .navbar-toggle:focus .icon-bar, 
 .navbar-default .navbar-toggle:hover .icon-bar {
-	background-color: #000000;
+	background-color: #652ff9;
 }
 
 /*=============================================================================
@@ -116,7 +116,7 @@
 ================================================================================*/
 
 body {
-	background-color: #f1eeed;
+	background-color: #2ffdd3;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	line-height: 1.82em;
@@ -127,7 +127,7 @@ a {
 }
 
 a:hover {
-	color: #000000;
+	color: #fd7e14;
 	text-decoration: none;
 }
 
@@ -171,7 +171,7 @@ h3 {
 }
 
 .alert-info a:hover, .alert-success a:hover {
-	color: #000000;
+	color: #fd7e14;
 }
 
 .alert-success {
@@ -303,18 +303,18 @@ input[type="checkbox"] {
 .pagination>.active>span, 
 .pagination>.active>span:focus, 
 .pagination>.active>span:hover {
-	background-color: #E4840D;
+	background-color: #652ff9;
 	/*border-color: #AF6F20;*/
 	border-color: transparent;
-	color: #E6E6E6;
+	color: #fd7e14;
 }
 
 .pagination>li>a:focus, 
 .pagination>li>a:hover, 
 .pagination>li>span:focus, 
 .pagination>li>span:hover {
-	background-color: #E4840D;
-	color: #ffffff;
+	background-color: #652ff9;
+	color: #fd7e14;
 }
 
 .pagination>li>a, 
@@ -352,7 +352,7 @@ input[type="checkbox"] {
 }
 
 .blog-item p a:hover {
-	color: #000;
+	color: #fd7e14;
 }
 
 .blog-item p time {
@@ -378,7 +378,7 @@ input[type="checkbox"] {
 }
 
 .single-blog-item p a:hover {
-	color: #337ab7;
+	color: #fd7e14;
 }
 
 
@@ -410,7 +410,7 @@ input[type="checkbox"] {
 }
 
 .related-articles .alert-info a:hover {
-	color: #000;
+	color: #fd7e14;
 }
 
 .advertisement {
@@ -439,7 +439,7 @@ input[type="checkbox"] {
 
 .btn-clipboard:hover {
 	color:#969595;
-	background-color:#f1f1f1;
+	background-color:#fd7e14;
 }
 
 .cmnt-clipboard {
@@ -481,7 +481,7 @@ input[type="checkbox"] {
 
 .header-wrapper {
     padding: 4em 0em;
-    background-color: rgba(0, 0, 0, 0.77);;
+    background-color: rgba(101, 47, 249, 0.77);;
 }
 
 #designInspirationPage .page-head {
@@ -742,7 +742,7 @@ only screen and (max-device-width : 550px){
 .subscribe-widget .input-group a.input-group-addon {
 	border: none;
 	border-radius: 0px;
-    color: #E4840D;
+    color: #652ff9;
     background-color: #1E1E1E;
 }
 
@@ -802,7 +802,7 @@ footer .social-share li a i {
 
 .share-widget .social-share li a i:hover {
 	background-color: #000000;
-	color: #E4840D;
+	color: #fd7e14;
 }
 
 @media(min-width: 501px) and (max-width: 991px) {
@@ -836,7 +836,7 @@ footer .social-share li a i {
 =============================================================================*/
 
 footer {
-    background-color: #1E1E1E;
+    background-color: #652ff9 ;
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
@@ -846,13 +846,13 @@ footer {
 }
 
 footer a {
-    color: #D2924C;
+    color: #2ffdd3;
     font-size: 16px;
     font-weight: 400;
 }
 
 footer a:hover {
-    color: #E4840D;
+    color: #fd7e14;
 }
 
 footer .social-share {
@@ -866,7 +866,7 @@ footer .social-share li a i {
 }
 
 footer .social-share li a i:hover {
-    background-color: #AF6F20;
+    background-color: #fd7e14;
     color: #ffffff;
 }
 
