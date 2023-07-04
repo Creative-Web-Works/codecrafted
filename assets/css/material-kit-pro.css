@@ -4155,7 +4155,7 @@ fieldset:disabled .btn {
   --bs-dropdown-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --bs-dropdown-link-color: #eb770b;
   --bs-dropdown-link-hover-color: #1262ed;
-  --bs-dropdown-link-hover-bg: #94e216;
+  --bs-dropdown-link-hover-bg: #fff;
   --bs-dropdown-link-active-color: #eb1480;
   --bs-dropdown-link-active-bg: transparent;
   --bs-dropdown-link-disabled-color: #6c7b7d;
