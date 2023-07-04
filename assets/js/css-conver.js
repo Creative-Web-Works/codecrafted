@@ -1,4 +1,4 @@
-/ Retrieve all elements with inline styles
+// Retrieve all elements with inline styles
 const elements = document.querySelectorAll('[style]');
 
 // Generate unique class names
@@ -46,7 +46,7 @@ const url = URL.createObjectURL(blob);
 // Create a temporary link element
 const link = document.createElement('a');
 link.href = url;
-link.download = 'material-kit-pro.css';
+link.download = 'styles.css';
 
 // Programmatically trigger a click event on the link element
 link.click();
