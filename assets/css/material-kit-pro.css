@@ -36,7 +36,7 @@
   --bs-warning: #f9ca2f;
   --bs-danger: #F44335;
   --bs-light: #f0f2f5;
-  --bs-dark: #344767;
+  --bs-dark: #000000;
   --bs-white: #fff;
   --bs-primary-rgb: 101, 47, 249;
   --bs-secondary-rgb: 99, 128, 154;
@@ -70,8 +70,8 @@
   --bs-border-radius-xl: 0.75rem;
   --bs-border-radius-2xl: 1rem;
   --bs-border-radius-pill: 50rem;
-  --bs-heading-color: #04010c;
-  --bs-link-color: #f9ca2f;
+  --bs-heading-color: #000000;
+  --bs-link-color: #000000;
   --bs-link-hover-color: #61fa15;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fcf8e3;
@@ -655,7 +655,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6df30d;
+  color: #000000;
 }
 
 .blockquote-footer::before {
@@ -3058,15 +3058,15 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type="checkbox"] {
-  background-image: linear-gradient(195deg, #2ffdd3  0%,  #652ff9 100%);
+  background-image: linear-gradient(195deg, #07f2ad  0%,  #652ff9 100%);
 }
 
 .form-check-input:checked[type="radio"] {
-  background-image: linear-gradient(195deg, #2ffdd3  0%,  #652ff9 100%);
+  background-image: linear-gradient(195deg, #07f2ad  0%,  #652ff9 100%);
 }
 
 .form-check-input[type="checkbox"]:indeterminate {
-  background-color: #652ff9;
+  background-color: #07f2ad;
   border-color: #652ff9;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
@@ -4726,8 +4726,8 @@ fieldset:disabled .btn {
   --bs-navbar-brand-padding-y: 0.40625rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.125rem;
-  --bs-navbar-brand-color: rgba(52, 71, 103, 0.9);
-  --bs-navbar-brand-hover-color: rgba(52, 71, 103, 0.9);
+  --bs-navbar-brand-color: rgba(101, 47, 249, 0.9);
+  --bs-navbar-brand-hover-color: rgba(7, 242, 173, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -10685,7 +10685,7 @@ fieldset:disabled .btn {
 }
 
 .text-dark {
-  color: #344767 !important;
+  color: #000000 !important;
 }
 
 .text-white {
@@ -21181,7 +21181,7 @@ fieldset:disabled .btn {
 }
 
 .card.card-background.card-background-mask-primary:after {
-  background-image: linear-gradient(195deg,  #2ffdd3  0%, #652ff9 100%);
+  background-image: linear-gradient(195deg,  #07f2ad  0%, #652ff9 100%);
   opacity: .85;
 }
 
@@ -21321,7 +21321,7 @@ fieldset:disabled .btn {
   top: 0;
   content: "";
   border-radius: 0.5rem;
-  background-image: linear-gradient(195deg, #2ffdd3), #652ff9;
+  background-image: linear-gradient(195deg, #07f2ad), #652ff9;
   opacity: .85;
 }
 
@@ -22427,7 +22427,7 @@ body.dark-version {
   width: 0.8375rem;
   height: 0.8375rem;
   border-radius: 50%;
-  background-image: linear-gradient(195deg,  #652ff9 0%,  #2ffdd3 100%), var(--bs-gradient);
+  background-image: linear-gradient(195deg,  #652ff9 0%,  #07f2ad 100%), var(--bs-gradient);
   opacity: 0;
   left: 0;
   right: 0;
@@ -22571,7 +22571,7 @@ label,
 }
 
 .footer .nav-link {
-  color: #652ff9;
+  color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
   font-size: 0.875rem;
   padding-top: 0;
@@ -22588,7 +22588,7 @@ label,
 }
 
 .bg-gradient-primary {
-  background-image: linear-gradient(195deg, #2ffdd3 0%, #652ff9 100%);
+  background-image: linear-gradient(195deg, #07f2ad 0%, #652ff9 100%);
 }
 
 .bg-gradient-secondary {
@@ -22846,7 +22846,7 @@ svg.text-primary .color-foreground {
 }
 
 svg.text-primary .color-background {
-  fill:  #2ffdd3;
+  fill:  #07f2ad;
 }
 
 svg.text-secondary .color-foreground {
@@ -24801,7 +24801,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 .pagination.pagination-primary .page-item.active>.page-link,
 .pagination.pagination-primary .page-item.active>.page-link:focus,
 .pagination.pagination-primary .page-item.active>.page-link:hover {
-  background-image: linear-gradient(195deg,  #2ffdd3  0%, #652ff9 100%);
+  background-image: linear-gradient(195deg,  #07f2ad  0%, #652ff9 100%);
   border: none;
 }
 
@@ -26028,7 +26028,7 @@ p {
 }
 
 .text-gradient.text-primary {
-  background-image: linear-gradient(195deg,#2ffdd3), #652ff9;
+  background-image: linear-gradient(195deg,#07f2ad), #652ff9;
 }
 
 .text-gradient.text-info {
@@ -32670,7 +32670,7 @@ Github: https://github.com/fiduswriter/Simple-DataTables
 
 .dataTable-wrapper .dataTable-bottom .dataTable-pagination .dataTable-pagination-list .active a {
   background: transparent;
-  background-image: linear-gradient(195deg,  #2ffdd3  0%, #652ff9 100%);
+  background-image: linear-gradient(195deg,  #07f2ad  0%, #652ff9 100%);
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.09), 0 2px 3px -1px rgba(0, 0, 0, 0.07);
   color: #fff;
   border: none;
@@ -32678,7 +32678,7 @@ Github: https://github.com/fiduswriter/Simple-DataTables
 }
 
 .dataTable-wrapper .dataTable-bottom .dataTable-pagination .dataTable-pagination-list .active a:hover {
-  background-image: linear-gradient(195deg,  #2ffdd3  0%, #652ff9 100%);
+  background-image: linear-gradient(195deg,  #07f2ad  0%, #652ff9 100%);
 }
 
 .dataTable-wrapper.no-footer .dataTable-container {
@@ -37951,7 +37951,7 @@ text,
 /*Colour Changing Gradient Background*/
 
 #gradclr, #gradclr1, body {
-  background: linear-gradient(-45deg, #d63384, #f7f71e, #63B3ED, #fd7e14 );
+  background: linear-gradient(-45deg, #d63384, #f7f71e, #fd7e14 );
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
