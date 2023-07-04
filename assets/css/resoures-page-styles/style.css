@@ -925,7 +925,7 @@ footer .footer-nav li {
 /*Colour Changing Gradient Background*/
 
 #gradclr, #gradclr1, body {
-	background: linear-gradient(-45deg, #d63384, #f7f71e, #fd7e14 );
+	background: linear-gradient(-45deg, #07f2ad, #652ff9, #f7f71e);
 	background-size: 400% 400%;
 	-webkit-animation: gradient 15s ease infinite;
 			animation: gradient 15s ease infinite;
@@ -934,13 +934,13 @@ footer .footer-nav li {
   
   @keyframes gradient {
 	0% {
-	  background-position: 0% 50%;
+	  background-position: 30% 50%;
 	}
 	50% {
-	  background-position: 100% 50%;
+	  background-position: 40% 50%;
 	}
 	100% {
-	  background-position: 0% 50%;
+	  background-position: 30% 50%;
 	}
   }
   

@@ -3895,7 +3895,7 @@ fieldset:disabled .btn {
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #652ff9;
   --bs-btn-hover-border-color: #652ff9;
-  --bs-btn-focus-shadow-rgb: 233, 30, 99;
+  --bs-btn-focus-shadow-rgb: 7, 242, 173;
   --bs-btn-active-color: #000;
   --bs-btn-active-bg: #652ff9;
   --bs-btn-active-border-color: #652ff9;
@@ -5608,7 +5608,7 @@ fieldset:disabled .btn {
   --bs-pagination-hover-border-color: #dee2e6;
   --bs-pagination-focus-color: #652ff9;
   --bs-pagination-focus-bg: #f0f2f5;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.2rem rgba(7, 242, 173, 0.25);
   --bs-pagination-active-color: #fff;
   --bs-pagination-active-bg: #652ff9;
   --bs-pagination-active-border-color: #652ff9;
@@ -6376,7 +6376,7 @@ fieldset:disabled .btn {
 
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(7, 242, 173, 0.25);
   opacity: 1;
 }
 
@@ -8089,7 +8089,7 @@ fieldset:disabled .btn {
 
 .text-bg-primary {
   color: #000 !important;
-  background-color: RGBA(233, 30, 99, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(7, 242, 173, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -10955,7 +10955,7 @@ fieldset:disabled .btn {
 }
 
 .shadow-primary {
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4) !important;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(7, 242, 173, 0.4) !important;
 }
 
 .shadow-secondary {
@@ -10983,7 +10983,7 @@ fieldset:disabled .btn {
 }
 
 .shadow-light {
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4) !important;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(7, 242, 173, 0.4) !important;
 }
 
 .transform-scale-5 {
@@ -22620,7 +22620,7 @@ label,
 }
 
 .bg-gradient-faded-primary {
-  background-image: radial-gradient(370px at 80% 50%, rgba(233, 30, 99, 0.6) 0, #652ff9 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(7, 242, 173, 1.0) 0, #652ff9 100%);
 }
 
 .bg-gradient-faded-secondary {
@@ -37951,22 +37951,22 @@ text,
 /*Colour Changing Gradient Background*/
 
 #gradclr, #gradclr1, body {
-  background: linear-gradient(-45deg, #d63384, #f7f71e, #fd7e14 );
-  background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
-  height: 150vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+	background: linear-gradient(-45deg, #07f2ad, #652ff9, #f7f71e);
+	background-size: 100% 100%;
+	-webkit-animation: gradient 15s ease infinite;
+			animation: gradient 15s ease infinite;
+	height: 150vh;
   }
-  50% {
-    background-position: 100% 50%;
+  
+  @keyframes gradient {
+	0% {
+	  background-position: 30% 50%;
+	}
+	50% {
+	  background-position: 40% 50%;
+	}
+	100% {
+	  background-position: 30% 50%;
+	}
   }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
+  
