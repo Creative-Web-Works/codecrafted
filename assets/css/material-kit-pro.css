@@ -421,7 +421,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+-webkit-appearance: button;
+appearance: button;
 }
 
 button:not(:disabled),
@@ -493,6 +494,7 @@ legend+* {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -505,15 +507,7 @@ legend+* {
 */
 ::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-::file-selector-button {
-  font: inherit;
-  -webkit-appearance: button;
+  appearance: none;
 }
 
 output {
@@ -2513,7 +2507,7 @@ progress {
 }
 
 .table-group-divider {
-  border-top: calc(2 * $table-border-width) solid currentColor;
+  border-top: 2px solid currentColor;
 }
 
 .caption-top {
@@ -3662,7 +3656,7 @@ textarea.form-control.is-invalid {
 .btn {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.625rem;
-  --bs-btn-font-family: 3rem ;
+  --bs-btn-font-family: 3rem;
   --bs-btn-font-size: 0.75rem;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.667;
@@ -3682,12 +3676,11 @@ textarea.form-control.is-invalid {
   line-height: var(--bs-btn-line-height);
   color: var(--bs-btn-color);
   text-align: center;
-  vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
@@ -5676,8 +5669,9 @@ fieldset:disabled .btn {
 }
 
 .page-item:not(:first-child) .page-link {
-  margin-left: calc($pagination-border-width * -1);
+  margin-left: calc(var(--pagination-border-width) * -1);
 }
+
 
 .page-item:first-child .page-link {
   border-top-left-radius: var(--bs-pagination-border-radius);
@@ -8100,7 +8094,7 @@ fieldset:disabled .btn {
 
 .text-bg-secondary {
   color: #000 !important;
-  background-color: RGBA(, 128, 154, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(0, 128, 154, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -20498,7 +20492,9 @@ fieldset:disabled .btn {
   position: relative;
   overflow: hidden;
   -webkit-appearance: none;
+  appearance: none;
 }
+
 
 .btn:not([class*="btn-outline-"]) {
   border: 0;
@@ -20601,21 +20597,22 @@ fieldset:disabled .btn {
   transform: translateX(-5px);
 }
 
+/* Primary button */
 .btn-primary,
 .btn.bg-gradient-primary {
-  box-shadow: 0 3px 3px 0 rgba(233, 30, 99, 0.15), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.15);
+  box-shadow: 0 3px 3px 0 rgba(0, 123, 255, 0.15), 0 3px 1px -2px rgba(0, 123, 255, 0.2), 0 1px 5px 0 rgba(0, 123, 255, 0.15);
 }
 
 .btn-primary:hover,
 .btn.bg-gradient-primary:hover {
-  background-color: #652ff9;
-  border-color: #652ff9;
-  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.4), 0 4px 23px 0 rgba(233, 30, 99, 0.15), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
+  background-color: #007BFF;
+  border-color: #007BFF;
+  box-shadow: 0 14px 26px -12px rgba(0, 123, 255, 0.4), 0 4px 23px 0 rgba(0, 123, 255, 0.15), 0 8px 10px -5px rgba(0, 123, 255, 0.2);
 }
 
 .btn-primary .btn.bg-outline-primary,
 .btn.bg-gradient-primary .btn.bg-outline-primary {
-  border: 1px solid #652ff9;
+  border: 1px solid #007BFF;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -20624,8 +20621,8 @@ fieldset:disabled .btn {
 .btn.bg-gradient-primary:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-primary:not(:disabled):not(.disabled):active,
 .show>.btn.bg-gradient-primary.dropdown-toggle {
-  color: color-yiq(#652ff9);
-  background-color: #652ff9;
+  color: color-yiq(#007BFF);
+  background-color: #007BFF;
 }
 
 .btn-primary.focus,
@@ -20643,54 +20640,10 @@ fieldset:disabled .btn {
   background-color: transparent;
   opacity: .75;
   box-shadow: none;
-  color: #652ff9;
+  color: #007BFF;
 }
 
-.btn-secondary,
-.btn.bg-gradient-secondary {
-  box-shadow: 0 3px 3px 0 rgba(, 128, 154, 0.15), 0 3px 1px -2px rgba(, 128, 154, 0.2), 0 1px 5px 0 rgba(, 128, 154, 0.15);
-}
-
-.btn-secondary:hover,
-.btn.bg-gradient-secondary:hover {
-  background-color: #7b809a;
-  border-color: #7b809a;
-  box-shadow: 0 14px 26px -12px rgba(, 128, 154, 0.4), 0 4px 23px 0 rgba(, 128, 154, 0.15), 0 8px 10px -5px rgba(, 128, 154, 0.2);
-}
-
-.btn-secondary .btn.bg-outline-secondary,
-.btn.bg-gradient-secondary .btn.bg-outline-secondary {
-  border: 1px solid #7b809a;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active,
-.show>.btn-secondary.dropdown-toggle,
-.btn.bg-gradient-secondary:not(:disabled):not(.disabled).active,
-.btn.bg-gradient-secondary:not(:disabled):not(.disabled):active,
-.show>.btn.bg-gradient-secondary.dropdown-toggle {
-  color: color-yiq(#7b809a);
-  background-color: #7b809a;
-}
-
-.btn-secondary.focus,
-.btn-secondary:focus,
-.btn.bg-gradient-secondary.focus,
-.btn.bg-gradient-secondary:focus {
-  color: #fff;
-}
-
-.btn-outline-secondary {
-  box-shadow: none;
-}
-
-.btn-outline-secondary:hover:not(.active) {
-  background-color: transparent;
-  opacity: .75;
-  box-shadow: none;
-  color: #7b809a;
-}
-
+/* Success button */
 .btn-success,
 .btn.bg-gradient-success {
   box-shadow: 0 3px 3px 0 rgba(76, 175, 80, 0.15), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.15);
@@ -20725,7 +20678,8 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
-.btn-outline-success {
+.btn-outline-success,
+.btn.bg-gradient-success {
   box-shadow: none;
 }
 
@@ -20755,10 +20709,10 @@ fieldset:disabled .btn {
 
 .btn-info:not(:disabled):not(.disabled).active,
 .btn-info:not(:disabled):not(.disabled):active,
-.show>.btn-info.dropdown-toggle,
+.show > .btn-info.dropdown-toggle,
 .btn.bg-gradient-info:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-info:not(:disabled):not(.disabled):active,
-.show>.btn.bg-gradient-info.dropdown-toggle {
+.show > .btn.bg-gradient-info.dropdown-toggle {
   color: color-yiq(#1A73E8);
   background-color: #1A73E8;
 }
@@ -20800,10 +20754,10 @@ fieldset:disabled .btn {
 
 .btn-warning:not(:disabled):not(.disabled).active,
 .btn-warning:not(:disabled):not(.disabled):active,
-.show>.btn-warning.dropdown-toggle,
+.show > .btn-warning.dropdown-toggle,
 .btn.bg-gradient-warning:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-warning:not(:disabled):not(.disabled):active,
-.show>.btn.bg-gradient-warning.dropdown-toggle {
+.show > .btn.bg-gradient-warning.dropdown-toggle {
   color: color-yiq(#fd772f);
   background-color: #fd772f;
 }
@@ -20845,10 +20799,10 @@ fieldset:disabled .btn {
 
 .btn-danger:not(:disabled):not(.disabled).active,
 .btn-danger:not(:disabled):not(.disabled):active,
-.show>.btn-danger.dropdown-toggle,
+.show > .btn-danger.dropdown-toggle,
 .btn.bg-gradient-danger:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-danger:not(:disabled):not(.disabled):active,
-.show>.btn.bg-gradient-danger.dropdown-toggle {
+.show > .btn.bg-gradient-danger.dropdown-toggle {
   color: color-yiq(#F44335);
   background-color: #F44335;
 }
@@ -20888,26 +20842,30 @@ fieldset:disabled .btn {
   border: 1px solid #f0f2f5;
 }
 
+.fc .fc-button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  appearance: button; /* Standard property for compatibility */
+}
+
 .btn-light:not(:disabled):not(.disabled).active,
 .btn-light:not(:disabled):not(.disabled):active,
-.show>.btn-light.dropdown-toggle,
+.show > .btn-light.dropdown-toggle,
 .btn.bg-gradient-light:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-light:not(:disabled):not(.disabled):active,
-.show>.btn.bg-gradient-light.dropdown-toggle {
+.show > .btn.bg-gradient-light.dropdown-toggle {
   color: color-yiq(#f0f2f5);
   background-color: #f0f2f5;
 }
 
-.btn-outline-light {
-  box-shadow: none;
+.btn-light.focus,
+.btn-light:focus,
+.btn.bg-gradient-light.focus,
+.btn.bg-gradient-light:focus {
+  color: #000;
 }
 
-.btn-outline-light:hover:not(.active) {
-  background-color: transparent;
-  opacity: .75;
-  box-shadow: none;
-  color: #f0f2f5;
-}
 
 .btn-dark,
 .btn.bg-gradient-dark {
@@ -21658,7 +21616,7 @@ fieldset:disabled .btn {
 
 .dark-version .fc-theme-standard td,
 .dark-version .fc-theme-standard th {
-  border-color: rgba(, 128, 154, 0.3);
+  border-color: rgba(0, 128, 154, 0.3);
 }
 
 .dark-version .dataTable-sorter::after {
@@ -22662,76 +22620,77 @@ label,
 }
 
 .bg-gradient-faded-primary {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(233, 30, 99, 0.6) 0, #652ff9 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(233, 30, 99, 0.6) 0, #652ff9 100%);
 }
 
 .bg-gradient-faded-secondary {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(, 128, 154, 0.6) 0, #626780 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(128, 154, 0.6) 0, #626780 100%);
 }
 
 .bg-gradient-faded-success {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(76, 175, 80, 0.6) 0, #3d8b40 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(76, 175, 80, 0.6) 0, #3d8b40 100%);
 }
 
 .bg-gradient-faded-info {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(26, 115, 232, 0.6) 0, #135cbc 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(26, 115, 232, 0.6) 0, #135cbc 100%);
 }
 
 .bg-gradient-faded-warning {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(251, 140, 0, 0.6) 0, #c87000 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(251, 140, 0, 0.6) 0, #c87000 100%);
 }
 
 .bg-gradient-faded-danger {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(244, 67, 53, 0.6) 0, #e91d0d 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(244, 67, 53, 0.6) 0, #e91d0d 100%);
 }
 
 .bg-gradient-faded-light {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(240, 242, 245, 0.6) 0, #d1d7e1 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(240, 242, 245, 0.6) 0, #d1d7e1 100%);
 }
 
 .bg-gradient-faded-dark {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(52, 71, 103, 0.6) 0, #233045 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(52, 71, 103, 0.6) 0, #233045 100%);
 }
 
 .bg-gradient-faded-white {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(255, 255, 255, 0.6) 0, #e6e6e6 100%);
+  background-image: radial-gradient(370px at 80% 50%, rgba(255, 255, 255, 0.6) 0, #e6e6e6 100%);
 }
 
 .bg-gradient-faded-primary-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(236, 64, 122, 0.3) 0, #652ff9 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(236, 64, 122, 0.3) 0, #652ff9 100%);
 }
 
 .bg-gradient-faded-secondary-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(99, 128, 154, 0.3) 0, #7b809a 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(99, 128, 154, 0.3) 0, #7b809a 100%);
 }
 
 .bg-gradient-faded-success-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(76, 175, 80, 0.3) 0, #4CAF50 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(76, 175, 80, 0.3) 0, #4CAF50 100%);
 }
 
 .bg-gradient-faded-info-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(26, 115, 232, 0.3) 0, #1A73E8 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(26, 115, 232, 0.3) 0, #1A73E8 100%);
 }
 
 .bg-gradient-faded-warning-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(251, 140, 0, 0.3) 0, #fd772f 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(251, 140, 0, 0.3) 0, #fd772f 100%);
 }
 
 .bg-gradient-faded-danger-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(244, 67, 53, 0.3) 0, #F44335 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(244, 67, 53, 0.3) 0, #F44335 100%);
 }
 
 .bg-gradient-faded-light-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(240, 242, 245, 0.3) 0, #f0f2f5 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(240, 242, 245, 0.3) 0, #f0f2f5 100%);
 }
 
 .bg-gradient-faded-dark-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(52, 71, 103, 0.3) 0, #344767 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(52, 71, 103, 0.3) 0, #344767 100%);
 }
 
 .bg-gradient-faded-white-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(255, 255, 255, 0.3) 0, #fff 100%);
+  background-image: radial-gradient(200px at 50% 70%, rgba(255, 255, 255, 0.3) 0, #fff 100%);
 }
+
 
 .material-icons {
   font-family: 'Material Icons Round';
@@ -26207,7 +26166,7 @@ p {
   box-sizing: border-box;
   touch-action: manipulation;
   background: #fff;
-  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transform: scale(0.95) !important;
 }
 
@@ -27245,18 +27204,21 @@ span.flatpickr-weekday {
   cursor: ns-resize;
 }
 
+
 .noUi-handle {
   border: 1px solid #652ff9;
   border-radius: 3px;
   background: #fff;
   cursor: default;
   box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
-  webkit-transition: .3s ease 0s;
+  -webkit-transition: .3s ease 0s;
   -moz-transition: .3s ease 0s;
   -ms-transition: .3s ease 0s;
-  -o-transform: .3s ease 0s;
+  -o-transition: .3s ease 0s;
   transition: .3s ease 0s;
-}
+  transform: .3s ease 0s;
+  }
+
 
 .noUi-active {
   box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
@@ -28583,9 +28545,10 @@ round-slider.scaling:hover {
   box-sizing: border-box;
   touch-action: manipulation;
   background: #fff;
-  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transform: scale(0.95) !important;
 }
+
 
 .flatpickr-calendar.open,
 .flatpickr-calendar.inline {
@@ -29627,12 +29590,12 @@ span.flatpickr-weekday {
   background: #fff;
   cursor: default;
   box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
-  webkit-transition: .3s ease 0s;
+  transition: .3s ease 0s;
   -moz-transition: .3s ease 0s;
   -ms-transition: .3s ease 0s;
-  -o-transform: .3s ease 0s;
-  transition: .3s ease 0s;
+  -o-transition: .3s ease 0s;
 }
+
 
 .noUi-active {
   box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
@@ -30837,7 +30800,6 @@ Docs & License: https://fullcalendar.io/
   user-select: none;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fcicons' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -30847,6 +30809,7 @@ Docs & License: https://fullcalendar.io/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 
 
@@ -30885,9 +30848,7 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 These styles only apply when the standard-theme is activated.
 When it's NOT activated, the fc-button classes won't even be in the DOM.
 */
-.fc {
-  /* reset */
-}
+
 
 .fc .fc-button {
   border-radius: 0;
@@ -30906,6 +30867,9 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 
 .fc .fc-button {
   -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  appearance: button; /* Standard property for compatibility */
 }
 
 .fc .fc-button:not(:disabled) {
@@ -30917,9 +30881,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   border-style: none;
 }
 
-.fc {
-  /* theme */
-}
+
 
 .fc .fc-button {
   display: inline-block;
@@ -30951,9 +30913,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   opacity: 0.65;
 }
 
-.fc {
-  /* "primary" coloring */
-}
+
 
 .fc .fc-button-primary {
   color: #fff;
@@ -31003,9 +30963,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
 }
 
-.fc {
-  /* icons within buttons */
-}
+
 
 .fc .fc-button .fc-icon {
   vertical-align: middle;
@@ -31197,9 +31155,6 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   /* head keeps its bottom border tho */
 }
 
-.fc {
-  /* stickiness */
-}
 
 .fc .fc-scrollgrid-section-sticky>* {
   background: #fff;
@@ -31241,9 +31196,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   position: relative;
 }
 
-.fc {
-  /* when the harness controls the height, make the view liquid */
-}
+
 
 .fc .fc-view-harness-active>.fc-view {
   position: absolute;
@@ -31343,8 +31296,9 @@ a.fc-event:hover {
 
 .fc-event:hover,
 .fc-event-selected {
-  /* TOUCH */
+  cursor: pointer;
 }
+
 
 .fc-event:hover .fc-event-resizer,
 .fc-event-selected .fc-event-resizer {
@@ -31391,9 +31345,7 @@ a.fc-event:hover {
   bottom: 0;
 }
 
-.fc-event-selected {
-  /* dimmer effect */
-}
+
 
 .fc-event-selected:after {
   content: "";
@@ -31563,12 +31515,13 @@ A HORIZONTAL event
   background: var(--fc-neutral-bg-color, rgba(208, 208, 208, 0.3));
 }
 
-/* help things clear margins of inner content */
 .fc-daygrid-day-frame,
 .fc-daygrid-day-events,
 .fc-daygrid-event-harness {
-  /* for event top/bottom margins */
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 
 .fc-daygrid-day-frame:before,
 .fc-daygrid-day-events:before,
@@ -31604,9 +31557,6 @@ A HORIZONTAL event
   /* seems to work better than `height` because sets height after rows/cells naturally do it */
 }
 
-.fc {
-  /* cell top */
-}
 
 .fc .fc-daygrid-day-top {
   display: flex;
@@ -31617,9 +31567,7 @@ A HORIZONTAL event
   opacity: 0.3;
 }
 
-.fc {
-  /* day number (within cell top) */
-}
+
 
 .fc .fc-daygrid-day-number {
   position: relative;
@@ -31627,18 +31575,13 @@ A HORIZONTAL event
   padding: 4px;
 }
 
-.fc {
-  /* event container */
-}
+
 
 .fc .fc-daygrid-day-events {
   margin-top: 1px;
   /* needs to be margin, not padding, so that available cell height can be computed */
 }
 
-.fc {
-  /* positioning for balanced vs natural */
-}
 
 .fc .fc-daygrid-body-balanced .fc-daygrid-day-events {
   position: absolute;
@@ -31653,17 +31596,12 @@ A HORIZONTAL event
   /* in addition to being a min-height during natural height, equalizes the heights a little bit */
 }
 
-.fc .fc-daygrid-body-natural {
-  /* can coexist with -unbalanced */
-}
+
 
 .fc .fc-daygrid-body-natural .fc-daygrid-day-events {
   margin-bottom: 1em;
 }
 
-.fc {
-  /* event harness */
-}
 
 .fc .fc-daygrid-event-harness {
   position: relative;
@@ -31685,9 +31623,7 @@ A HORIZONTAL event
   bottom: 0;
 }
 
-.fc {
-  /* bg content */
-}
+
 
 .fc .fc-daygrid-day-bg .fc-non-business {
   z-index: 1;
@@ -31701,9 +31637,7 @@ A HORIZONTAL event
   z-index: 3;
 }
 
-.fc {
-  /* events */
-}
+
 
 .fc .fc-daygrid-event {
   z-index: 6;
@@ -31714,9 +31648,7 @@ A HORIZONTAL event
   z-index: 7;
 }
 
-.fc {
-  /* cell bottom (within day-events) */
-}
+
 
 .fc .fc-daygrid-day-bottom {
   font-size: .85em;
@@ -31729,9 +31661,6 @@ A HORIZONTAL event
   cursor: pointer;
 }
 
-.fc {
-  /* week number (within frame) */
-}
 
 .fc .fc-daygrid-week-number {
   position: absolute;
@@ -31746,9 +31675,7 @@ A HORIZONTAL event
   color: var(--fc-neutral-text-color, #808080);
 }
 
-.fc {
-  /* popover */
-}
+
 
 .fc .fc-more-popover {
   z-index: 8;
@@ -31919,9 +31846,7 @@ A VERTICAL event
   right: -10px;
 }
 
-.fc-v-event {
-  /* resizer (mouse AND touch) */
-}
+
 
 .fc-v-event .fc-event-resizer-start {
   cursor: n-resize;
@@ -31931,9 +31856,7 @@ A VERTICAL event
   cursor: s-resize;
 }
 
-.fc-v-event {
-  /* resizer for MOUSE */
-}
+
 
 .fc-v-event:not(.fc-event-selected) .fc-event-resizer {
   height: 8px;
@@ -31952,9 +31875,7 @@ A VERTICAL event
   bottom: calc(var(--fc-event-resizer-thickness, 8px) / -2);
 }
 
-.fc-v-event {
-  /* resizer for TOUCH (when event is "selected") */
-}
+
 
 .fc-v-event.fc-event-selected .fc-event-resizer {
   left: 50%;
@@ -32032,19 +31953,13 @@ A VERTICAL event
   /* vertical align the slots */
 }
 
-.fc {
-  /* slots AND axis cells (top-left corner of view including the "all-day" text) */
-}
+
 
 .fc .fc-timegrid-axis-cushion,
 .fc .fc-timegrid-slot-label-cushion {
   padding: 0 4px;
 }
 
-.fc {
-  /* axis cells (top-left corner of view including the "all-day" text) */
-  /* vertical align is more complicated, uses flexbox */
-}
 
 .fc .fc-timegrid-axis-frame-liquid {
   height: 100%;
@@ -32131,10 +32046,6 @@ A VERTICAL event
   /* top/left/right/bottom will all be set by JS */
 }
 
-.fc {
-  /* bg */
-}
-
 .fc .fc-timegrid-col-bg {
   z-index: 2;
   /* TODO: kill */
@@ -32159,20 +32070,14 @@ A VERTICAL event
   right: 0;
 }
 
-.fc {
-  /* fg events */
-  /* (the mirror segs are put into a separate container with same classname, */
-  /* and they must be after the normal seg container to appear at a higher z-index) */
-}
+
 
 .fc .fc-timegrid-col-events {
   z-index: 3;
   /* child event segs have z-indexes that are scoped within this div */
 }
 
-.fc {
-  /* now indicator */
-}
+
 
 .fc .fc-timegrid-now-indicator-container {
   bottom: 0;
@@ -32238,9 +32143,6 @@ A VERTICAL event
   right: 0;
 }
 
-.fc {
-  /* line */
-}
 
 .fc .fc-timegrid-now-indicator-line {
   position: absolute;
@@ -32253,9 +32155,7 @@ A VERTICAL event
   border-width: 1px 0 0;
 }
 
-.fc {
-  /* arrow */
-}
+
 
 .fc .fc-timegrid-now-indicator-arrow {
   position: absolute;
@@ -32293,9 +32193,7 @@ A VERTICAL event
   border: 1px solid var(--fc-border-color, #ddd);
 }
 
-.fc {
-  /* message when no events */
-}
+
 
 .fc .fc-list-empty {
   background-color: rgba(208, 208, 208, 0.3);
@@ -32311,10 +32209,7 @@ A VERTICAL event
   margin: 5em 0;
 }
 
-.fc {
-  /* table within the scroller */
-  /* ---------------------------------------------------------------------------------------------------- */
-}
+
 
 .fc .fc-list-table {
   width: 100%;
@@ -32347,10 +32242,6 @@ A VERTICAL event
   padding: 8px 14px;
 }
 
-.fc {
-  /* date heading rows */
-  /* ---------------------------------------------------------------------------------------------------- */
-}
 
 .fc .fc-list-day-cushion:after {
   content: "";
@@ -32393,9 +32284,7 @@ A VERTICAL event
   background-color: var(--fc-list-event-hover-bg-color, #f5f5f5);
 }
 
-.fc {
-  /* shrink certain cols */
-}
+
 
 .fc .fc-list-event-graphic,
 .fc .fc-list-event-time {
@@ -32414,18 +32303,13 @@ A VERTICAL event
   border-radius: calc(var(--fc-list-event-dot-width, 10px) / 2);
 }
 
-.fc {
-  /* reset <a> styling */
-}
+
 
 .fc .fc-list-event-title a {
   color: inherit;
   text-decoration: none;
 }
 
-.fc {
-  /* underline link when hovering over any part of row */
-}
 
 .fc .fc-list-event.fc-event-forced-url:hover a {
   text-decoration: underline;
@@ -34965,6 +34849,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
   margin-left: -40px;
   background: rgba(255, 255, 255, 0.9);
   -webkit-transform: scale(1);
+  transform: scale(1); /* Added standard transform property */
   border-radius: 8px;
   overflow: hidden;
 }
@@ -35633,7 +35518,6 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
   border: none;
   cursor: pointer;
   display: inline-block;
-  float: left;
   height: 24px;
   padding: 3px 5px;
   width: 28px;
@@ -35919,13 +35803,13 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
 .ql-snow .ql-picker {
   color: #444;
   display: inline-block;
-  float: left;
   font-size: 14px;
   font-weight: 500;
   height: 24px;
   position: relative;
   vertical-align: middle;
 }
+
 
 .ql-snow .ql-picker-label {
   cursor: pointer;
@@ -36803,9 +36687,10 @@ ul li.editMode label {
   z-index: 99999;
   -webkit-text-size-adjust: 100%;
   /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   outline: none;
-}
+  }
 
 .pswp * {
   box-sizing: border-box;
@@ -36862,9 +36747,10 @@ ul li.editMode label {
   background: #000;
   opacity: 0;
   transform: translateZ(0);
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   will-change: opacity;
-}
+  }
 
 .pswp__scroll-wrap {
   position: absolute;
@@ -36920,6 +36806,7 @@ ul li.editMode label {
 .pswp__container,
 .pswp__zoom-wrap {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .pswp__item {
@@ -36945,7 +36832,9 @@ ul li.editMode label {
 */
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
+
 
 /*
 	div element that matches size of large image
@@ -37089,8 +36978,8 @@ ul li.editMode label {
   width: 1600px;
   height: 1600px;
   -webkit-transform-origin: 0 0;
-}
-
+  transform-origin: 0 0;
+  }
 .leaflet-marker-icon,
 .leaflet-marker-shadow {
   display: block;
@@ -37150,7 +37039,11 @@ ul li.editMode label {
 /* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
 .leaflet-overlay-pane svg {
   -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 
 .leaflet-pane {
   z-index: 400;
@@ -37646,7 +37539,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-oldie .leaflet-popup-content-wrapper {
   -ms-zoom: 1;
+  zoom: 1;
 }
+
 
 .leaflet-oldie .leaflet-popup-tip {
   width: 24px;
