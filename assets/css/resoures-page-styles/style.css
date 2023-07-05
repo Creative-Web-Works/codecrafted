@@ -705,6 +705,7 @@ only screen and (max-device-width : 550px){
     width: 50%;
 }
 
+
 /*=================================================================================
 							About page
 ===================================================================================*/
@@ -863,8 +864,8 @@ footer .social-share li a i {
 =============================================================================*/
 
 footer {
-    background-color: #1E1E1E;
-    color: #ffffff;
+    background-color: #07f2ad;
+    color: #000000;
     font-size: 14px;
     font-weight: 300;
     padding: 21px 0px;
@@ -873,13 +874,13 @@ footer {
 }
 
 footer a {
-    color: #D2924C;
+    color: #652ff9;
     font-size: 16px;
     font-weight: 400;
 }
 
 footer a:hover {
-    color: #E4840D;
+    color: #652ff9;
 }
 
 footer .social-share {
@@ -893,12 +894,12 @@ footer .social-share li a i {
 }
 
 footer .social-share li a i:hover {
-    background-color: #AF6F20;
+    background-color: #652ff9;
     color: #ffffff;
 }
 
 footer .footer-nav {
-    float: right;
+    float: center;
     margin-top: 10px;
 }
 
@@ -907,6 +908,14 @@ footer .footer-nav li {
     list-style: none;
     margin-left: 15px;
 }
+
+  .flex-column {
+	flex-direction: column !important;
+  }
+
+  .flex-column-reverse {
+	flex-direction: column-reverse !important;
+  }
 
 @media (max-width: 767px) {
 	footer {
