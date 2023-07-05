@@ -6,14 +6,14 @@
 		<lastmod>2023-07-05</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/pages/about-index.html</loc>
+		<loc>https://www.codecrafted.co.uk/pages/blog-cat-index.html</loc>
 		<priority>0.83</priority>
 		<lastmod>2023-07-05</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/pages/blog-cat-index.html</loc>
+		<loc>https://www.codecrafted.co.uk/pages/about-index.html</loc>
 		<priority>0.83</priority>
-		<lastmod>2023-07-04</lastmod>
+		<lastmod>2023-07-05</lastmod>
 	</url>
 	<url>
 		<loc>https://www.codecrafted.co.uk/pages/blog1-index.html</loc>
@@ -43,17 +43,12 @@
 	<url>
 		<loc>https://www.codecrafted.co.uk/pages/faq.index.html</loc>
 		<priority>0.83</priority>
-		<lastmod>2023-07-04</lastmod>
+		<lastmod>2023-07-05</lastmod>
 	</url>
 	<url>
 		<loc>https://www.codecrafted.co.uk/pages/offer-wall-index.html</loc>
 		<priority>0.83</priority>
-		<lastmod>2023-07-04</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/pages/pracindex.html</loc>
-		<priority>0.83</priority>
-		<lastmod>2023-06-30</lastmod>
+		<lastmod>2023-07-05</lastmod>
 	</url>
 	<url>
 		<loc>https://www.codecrafted.co.uk/pages/privacy.index.html</loc>
@@ -73,7 +68,7 @@
 	<url>
 		<loc>https://www.codecrafted.co.uk/pages/terms.index.html</loc>
 		<priority>0.83</priority>
-		<lastmod>2023-07-04</lastmod>
+		<lastmod>2023-07-05</lastmod>
 	</url>
 	<url>
 		<loc>https://www.codecrafted.co.uk/node_modules/lru_map/example.html</loc>
