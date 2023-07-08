@@ -6,39 +6,19 @@
 		<lastmod>2023-07-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/pages/terms.index.html</loc>
+		<loc>https://www.codecrafted.co.uk/pages/about-index.html</loc>
 		<priority>0.83</priority>
-		<lastmod>2023-07-06</lastmod>
+		<lastmod>2023-07-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/pages/signin.index.html</loc>
+		<loc>https://www.codecrafted.co.uk/pages/blog1-index.html</loc>
 		<priority>0.83</priority>
-		<lastmod>2023-07-06</lastmod>
+		<lastmod>2023-07-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/pages/quest-index.html</loc>
+		<loc>https://www.codecrafted.co.uk/pages/contact-index.html</loc>
 		<priority>0.83</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/pages/privacy.index.html</loc>
-		<priority>0.83</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/pages/offer-wall-index.html</loc>
-		<priority>0.83</priority>
-		<lastmod>2023-07-05</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/pages/faq.index.html</loc>
-		<priority>0.83</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/pages/error500.index.html</loc>
-		<priority>0.83</priority>
-		<lastmod>2023-06-29</lastmod>
+		<lastmod>2023-07-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.codecrafted.co.uk/pages/error404.index.html</loc>
@@ -46,72 +26,42 @@
 		<lastmod>2023-06-29</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/pages/contact-index.html</loc>
+		<loc>https://www.codecrafted.co.uk/pages/error500.index.html</loc>
+		<priority>0.83</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/pages/faq.index.html</loc>
+		<priority>0.83</priority>
+		<lastmod>2023-07-08</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/pages/offer-wall-index.html</loc>
+		<priority>0.83</priority>
+		<lastmod>2023-07-05</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/pages/privacy.index.html</loc>
+		<priority>0.83</priority>
+		<lastmod>2023-07-08</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/pages/quest-index.html</loc>
+		<priority>0.83</priority>
+		<lastmod>2023-07-08</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/pages/signin.index.html</loc>
+		<priority>0.83</priority>
+		<lastmod>2023-07-08</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/pages/terms.index.html</loc>
 		<priority>0.83</priority>
 		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/pages/blog1-index.html</loc>
-		<priority>0.83</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/pages/about-index.html</loc>
-		<priority>0.83</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/page-sections/sliders.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/page-sections/backgrounds.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/input-areas/viewer.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/elements/interactive.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/elements/funky-txt.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/elements/animated-buttons.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/attention-catchers/call-to-actions.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/3D/3d-hover-boxes.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/3D/3d-features.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/sections/3D/3d-animation.html</loc>
-		<priority>0.75</priority>
-		<lastmod>2023-07-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/node_modules/tslib/tslib.html</loc>
+		<loc>https://www.codecrafted.co.uk/node_modules/lru_map/example.html</loc>
 		<priority>0.75</priority>
 		<lastmod>2023-06-30</lastmod>
 	</url>
@@ -121,102 +71,62 @@
 		<lastmod>2023-06-30</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/node_modules/lru_map/example.html</loc>
+		<loc>https://www.codecrafted.co.uk/node_modules/tslib/tslib.html</loc>
 		<priority>0.75</priority>
 		<lastmod>2023-06-30</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/node_modules/gulp-bump/examples/plugin.php</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-30</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/3D/3d-animation.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/interactive/interactive-curtains.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/3D/3d-features.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/interactive/impossible-checkbox.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/3D/3d-hover-boxes.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/magical-text.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/attention-catchers/call-to-actions.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/gooey-footer.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/elements/animated-buttons.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/funky-text.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/elements/funky-txt.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/drip-text.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/elements/interactive.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/neon-buttons.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/input-areas/viewer.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/gravity-button.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/page-sections/backgrounds.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-send-button.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
+		<loc>https://www.codecrafted.co.uk/sections/page-sections/sliders.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2023-07-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-order-butt.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-download-butt.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-delete-button.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/bg/bg-starfield.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/bg/bg-snow.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-29</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-timeline.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-img-cube.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-hover-boxs.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-gravity-light-buttons.html</loc>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-box-hovers.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2023-06-29</lastmod>
 	</url>
@@ -226,8 +136,103 @@
 		<lastmod>2023-06-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-box-hovers.html</loc>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-gravity-light-buttons.html</loc>
 		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-hover-boxs.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-img-cube.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/3d/3d-timeline.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/bg/bg-snow.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/bg/bg-starfield.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-delete-button.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-download-butt.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-order-butt.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/animated-send-button.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/gravity-button.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/buttons/neon-buttons.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/drip-text.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/funky-text.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/gooey-footer.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/funky-text/magical-text.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/interactive/impossible-checkbox.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/interactive/interactive-curtains.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/node_modules/gulp-bump/examples/plugin.php</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/complete/Sliders/carousel-01</loc>
+		<priority>0.58</priority>
 		<lastmod>2023-06-29</lastmod>
 	</url>
 	<url>
@@ -236,19 +241,9 @@
 		<lastmod>2023-06-29</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/complete/Sliders/carousel-01</loc>
-		<priority>0.58</priority>
-		<lastmod>2023-06-29</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/node_modules/@parcel/reporter-dev-server/src/templates/500.html</loc>
+		<loc>https://www.codecrafted.co.uk/assets/iframe-content/complete/Sliders/carousel-01/main.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-06-30</lastmod>
-	</url>
-	<url>
-		<loc>https://www.codecrafted.co.uk/node_modules/@parcel/reporter-dev-server/src/templates/404.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-06-30</lastmod>
+		<lastmod>2023-06-25</lastmod>
 	</url>
 	<url>
 		<loc>https://www.codecrafted.co.uk/assets/iframe-content/complete/Sliders/carousel-20/main.html</loc>
@@ -256,9 +251,14 @@
 		<lastmod>2023-06-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.codecrafted.co.uk/assets/iframe-content/complete/Sliders/carousel-01/main.html</loc>
+		<loc>https://www.codecrafted.co.uk/node_modules/@parcel/reporter-dev-server/src/templates/404.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-06-25</lastmod>
+		<lastmod>2023-06-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.codecrafted.co.uk/node_modules/@parcel/reporter-dev-server/src/templates/500.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-06-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.codecrafted.co.uk/assets/iframe-content/complete/Sliders/carousel-20/fonts/icomoon/demo.html</loc>
