@@ -36,7 +36,7 @@
     "meow": "^12.0.1",
     "normalize-package-data": "^5.0.0",
     "package-json-manager": "^1.1.6",
-    "read-pkg-up": "^9.1.0",
+    "read-pkg-up": "^10.0.0",
     "semver": "^7.5.3",
     "semver-stable": "^3.0.0",
     "snyk": "^1.1187.0",
